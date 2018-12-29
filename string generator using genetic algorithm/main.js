@@ -10,7 +10,7 @@ function gen_rand(min,max) // min and max included
 {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
-
+/*
 var sliders = Array.from(document.getElementsByClassName("slider"));
 for (var item in sliders) {
   sliders[item].getElementsByTagName("span")[0].innerHTML =
@@ -20,6 +20,7 @@ for (var item in sliders) {
       this.getElementsByTagName("input")[0].value;
   }
 }
+*/
 
 
 class Person {
@@ -88,7 +89,7 @@ function showElements(){
   doc = document.getElementsByClassName("output")[0];
   while(doc.firstChild && doc.removeChild(doc.firstChild));
   var p = document.createElement("p");
-  p.innerHTML = gen;
+  p.innerHTML = "generation: " + gen;
   doc.appendChild(p)
   console.log(gen);
   for (var i = 0; i < population; i++) {
